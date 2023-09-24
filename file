@@ -1,0 +1,8 @@
+#!/bin/bash
+yum update -y
+pip3 install fastapi[all]
+pip3 install uvicorn[standard]
+yum -y install git
+sudo git clone https://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@github.com/jemai-sameh/first-aws-project.git
+cd first-aws-project
+/usr/local/bin/uvicorn main:app --host 0.0.0.0 --port 8000
